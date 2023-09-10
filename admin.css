@@ -1,0 +1,111 @@
+/* Reset some default styles */
+body, h1{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px;
+    animation: spin 2s infinite linear; /* Add animation to the logo */
+}
+.navbar-right .loginbutton {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 9px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-right .loginbutton:hover {
+    background-color: #fff;
+    color: #937dbe;
+}
+
+/* Animation keyframes for spinning the logo */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* <!-- Second Navbar for Sign Up Page --> */
+.signup-navbar {
+    background-color: white; 
+    color: black; 
+    padding: 20px 82px;
+}
+
+.signup-navbar h2 {
+    font-size: 24px;
+    margin: 0;
+}
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .buttons {
+    text-align: center;
+  }
+  
+
+  
+  
+

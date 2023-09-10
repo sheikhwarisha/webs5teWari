@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+         <!-- First Navbar -->
+         <nav class="navbar">
+            <div class="navbar-left">
+                <!-- Add your logo image here -->
+                <img src="sylanilogo.jpg" alt="Logo">
+                <h1>Attendance Application SMIT</h1>
+            </div>
+            <div class="navbar-right">
+                <a class="loginbutton" onclick="logout()" href="#">logout</a>
+            </div>
+        </nav>
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+        <hr />
+        <br />
+        <div class="form">
+            <!-- Class Details Form -->
+            <h3>Add Class Details</h3>
+            <label for="classTiming">Class Timing:</label>
+            <select name="classTiming" id="classTiming" required>
+                <option value="" selected disabled>Choose Class Timing</option>
+                <option value="9:00 to 10:00 Sunday">9:00 to 10:00 Sunday</option>
+                <option value="10:00 to 11:00 Sunday">10:00 to 11:00 Sunday</option>
+                <option value="11:00 to 12:00 Monday">11:00 to 12:00 Monday</option>
+                <option value="12:00 to 1:00 Monday">12:00 to 1:00 Monday</option>
+                <option value="1:00 to 2:00 Tuesday">1:00 to 2:00 Tuesday</option>
+                <option value="2:00 to 3:00 Tuesday">2:00 to 3:00 Tuesday</option>
+                <option value="3:00 to 4:00 Wednesday">3:00 to 4:00 Wednesday</option>
+                <option value="4:00 to 5:00 Wednesday">4:00 to 5:00 Wednesday</option>
+                <option value="5:00 to 6:00 Thursday">5:00 to 6:00 Thursday</option>
+                <option value="6:00 to 7:00 Thursday">6:00 to 7:00 Thursday</option>
+                <option value="7:00 to 8:00 Friday">7:00 to 8:00 Friday</option>
+                <option value="8:00 to 9:00 Friday">8:00 to 9:00 Friday</option>
+                <option value="9:00 to 1:00 Saturday">9:00 to 1:00 Saturday</option>
+                <option value="14:00 to 17:00 Saturday">14:00 to 17:00 Saturday</option>
+                <!-- Add more options here for class timings -->
+            </select> <br /><br />
+
+            <label for="schedule">Course :</label>
+            <select name="schedule" id="schedule" required>
+                <option value="" selected disabled>Choose Schedule</option>
+                <option value="Html">Html</option>
+                <option value="CSS">CSS</option>
+                <option value="UI (FRONT END)">UI (FRONT END)</option>
+                <option value="UX (Back End)">UX (Back End)</option>
+                <option value="Javascript">Javascript</option>
+                <option value="ES6">ES6</option>
+                <option value="Javascript">Python</option>
+                <option value="React">React</option>
+                <option value="React with backEnd">React with backEnd</option>
+                <option value="C#">C#</option>
+                <option value="Turboo c++">Turboo c++</option>
+                <option value="Frontend Backend">Frontend Backend</option>
+                <option value="ReactJs">ReactJs</option>
+                <option value="SQL">SQL</option>
+                <!-- Add more options here for schedules -->
+            </select> <br /><br />
+            <button id="addClassDetails">Add Class Details</button>
+            <button id="updateClassDetails">Update Class Details</button>
+            <button id="deleteClassDetails">Delete Class Details</button>            
+        </div>
+
+        <div class="form">
+            <!-- Student Details Form -->
+            <h3>Add Student Details</h3>
+            <label for="roll">Roll Number:</label>
+            <input type="text" name="roll" id="roll" /> <br /><br />
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" /> <br /><br />
+
+            <label for="gender">Gender:</label>
+            <input type="text" nam  e="gender" id="gender" /> <br /><br />
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" /> <br /><br />
+
+        </div>
+        <div class="buttfons">   
+            <!-- Additional buttons for CRUD operations -->
+            <button id="addClassDetails">Add Student Details</button>
+            <button id="updateStudentDetails">Update Student Details</button>
+            <button id="deleteStudentDetails">Delete Student Details</button>
+        </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase.js"></script>
+    <script src="config.js"></script> --                                                                                                    
+    <script src="admin.js"></script>
+</body>
+
+</html>
+
+
